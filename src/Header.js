@@ -4,10 +4,11 @@ import "./Header.css";
 
 // TODO: RemoveRender the title props in the header.
 function Header(props) {
-    return 
+    return(
         <div className="header">
             Delete this filler text! :)
-        </div>;
+        </div>
+    );
 }
 
 export default Header;

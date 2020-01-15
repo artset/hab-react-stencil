@@ -6,26 +6,21 @@ class Converter extends React.Component {
     constructor(props) {
         super(props);
 
-        // TODO: Add state to your converter, so it has a d
+        // TODO: Add two states to the input and their defaults:
+        // 1) The input
+        // 2) The inputType
         this.state = {
-            input: "0",
-            inputType: "blue room muffin"
+
         }
 
-        // TODO: bind the
+        // TODO: bind onTextInput and onSwitchUnits
 
     }
 
-    ////////////////////////////////////////////////////////////////////////////
-    // STEP 1: This section is to make the converter take a text input, and output
 
-    // TODO: 
+    // TODO: Set the input state to the text entered in the text box.
+    // Hint: Access the text with 'e.target.value'
     onTextInput(e) {
-        if (e.target.value.length > 0) {
-            this.setState({input: e.target.value});
-        } else {
-            this.setState({input: "0"});
-        }
         
     }
 
@@ -35,24 +30,22 @@ class Converter extends React.Component {
     // Output: How you want to represent the converter
     // Hint:  847 muffins make a scili.
     muffinToSciLi(muffins) {
-        return;
     }
 
     sciliToMuffin(scili) {
-        return;
     }
 
-    // TODO: Use the input state to call a conversion function
+    // TODO: Use the input state to call a conversion function, and return it
+    // Bonus points: you can check if the input is a valid number. if not, you can return an error message.
     getOutput() {
-        return;
     }
 
     
-    // handles button click event
+    // When the button 'Switch' is clicked, you want to switch the state of the input type.
+    // ex. if the input type is 'blue room muffin', you want the input type to be 'scili'
     onSwitchUnits() {
         this.state.inputType === "blue room muffin" ? this.setState({inputType: "scili"}) : this.setState({inputType: "blue room muffin"});
     }
-
 
 
     render() {
@@ -60,19 +53,17 @@ class Converter extends React.Component {
         <div className="converter">
             <div className="converter__content">
 
-                {/* This is the text input box that will take in your input. */}
                 <div className="input">
-                    <input type="text" onChange={ e => {this.onTextInput(e) }} /> {this.state.inputType}(s)
+                    {/* TODO: make a text box and onChange, call onTextInput*/}
                 </div>
                 
-                {/* This is the div that will render the output calculation. */}
                 <div className="output">
-                    {this.getOutput()}
+                     {/* TODO: call getOutput() */}
+                    
                 </div>
             </div>
 
-            {/* This is the button to click in order to switch units. We'll do this last! */}
-            <button type="button" onClick={this.onSwitchUnits} class="button">Switch</button>
+            {/* TODO:Make a button of type button, with class button, and onClick, calls onSwitchUnits */}
 
         </div>
       )

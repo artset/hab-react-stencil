@@ -7,9 +7,8 @@ class App extends React.Component {
     render() {
       return (
           <div className="content">
-              {/* This is where the content of your app will go! Todo: */}
+              Hey! Welcome to the starter project. Feel free to delete this text and start adding your own components!
               {/* TODO: add a Header Component */}
-              
               {/* TODO: add a Converter Component */}
           </div>
       )
