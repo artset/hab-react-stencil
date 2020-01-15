@@ -7,8 +7,10 @@ class App extends React.Component {
     render() {
       return (
           <div className="content">
-              <Header title="How many stacked blue room muffins make a scili?" />
-              <Converter />
+              {/* This is where the content of your app will go! Todo: */}
+              {/* TODO: add a Header Component */}
+              
+              {/* TODO: add a Converter Component */}
           </div>
       )
     }
