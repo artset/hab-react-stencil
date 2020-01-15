@@ -36,15 +36,15 @@ class Converter extends React.Component {
     }
 
     // TODO: Use the input state to call a conversion function, and return it
-    // Bonus points: you can check if the input is a valid number. if not, you can return an error message.
+    // Bonus points: you can check if the input is a valid number. if not, you can return an error message using the div class 'error'.
     getOutput() {
     }
 
     
     // When the button 'Switch' is clicked, you want to switch the state of the input type.
     // ex. if the input type is 'blue room muffin', you want the input type to be 'scili'
+    // This function does not return anything.
     onSwitchUnits() {
-        this.state.inputType === "blue room muffin" ? this.setState({inputType: "scili"}) : this.setState({inputType: "blue room muffin"});
     }
 
 
@@ -63,7 +63,7 @@ class Converter extends React.Component {
                 </div>
             </div>
 
-            {/* TODO:Make a button of type button, with class button, and onClick, calls onSwitchUnits */}
+            {/* TODO: Make a button of type button, with class button, and onClick, calls onSwitchUnits */}
 
         </div>
       )
